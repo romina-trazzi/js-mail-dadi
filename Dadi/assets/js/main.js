@@ -41,7 +41,6 @@ btnGenera.addEventListener("click", function () {
     } 
 });
 
-
 /* Creiamo una funzione di ascolto per l'evento click su btnAnnulla
 che ora è anche una variabile JS per svuotare le variabili */
     btnReset.addEventListener("click", function () {
