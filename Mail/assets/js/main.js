@@ -26,7 +26,7 @@ console.log(boolean);
 
 
 // Creiamo i messaggi per l'utente
-if (boolean = true) {
+if (boolean == true) {
     alert("Il controllo è andato a buon fine, sei nella lista!");
 } else {
     alert("Il controllo dice che non sei nella lista!");
@@ -42,7 +42,7 @@ btnAgain.addEventListener("click", function () {
     lista_email = ["alfa@gmail.com", "beta@gmail.com", "gamma@gmail.com", "delta@gmail.com", "eta@gmail.com"];
     boolean = lista_email.includes(userMail);
 
-    if (boolean = true) {
+    if (boolean == true) {
         alert("Il controllo è andato a buon fine, sei nella lista!");
     } else {
         alert("Il controllo dice che non sei nella lista!");

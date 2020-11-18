@@ -6,6 +6,12 @@
 var btnGenera = document.getElementById("btn_genera");
 var btnReset = document.getElementById("btn_reset");
 
+// Creiamo variabili JS per collegarle agli input HTML
+var num1 = document.getElementById("numero_utente");
+var num2 = document.getElementById("numero_computer");
+
+//console.log(num1, num2);
+
 /* Creiamo una funzione di ascolto per l'evento click su btnGenera
 che ora è anche una variabile JS */
 btnGenera.addEventListener("click", function () {
@@ -16,20 +22,10 @@ btnGenera.addEventListener("click", function () {
    var numberPc = Number(Math.floor(Math.random() * 6) + 1);
 
    //console.log(numberUser, numberPc);
-   
-   // Creiamo variabili JS per collegarle agli input HTML
-   var num1 = document.getElementById("numero_utente");
-   var num2 = document.getElementById("numero_computer");
-
-   //console.log(num1, num2);
-   
-   // Assegniamo a delle variabili JS i valori degli input HTML
-   var num1Input = num1.value;
-   var num2Input = num2.value;
-   
+      
    // Inseriamo i risultati delle variabili JS di calcolo al posto dei valori degli input HTML
-   num1Input.innerHTML = numberUser;
-   num2Input.innerHTML = numberPc;
+   num1.value = numberUser;
+   num2.value = numberPc;
    
    // Creiamo messaggi di alert per mostrare i risultati all'utente
    if (numberUser > numberPc) {
@@ -39,6 +35,7 @@ btnGenera.addEventListener("click", function () {
     } else {
         alert("Pareggio!");
     } 
+
 });
 
 /* Creiamo una funzione di ascolto per l'evento click su btnAnnulla
